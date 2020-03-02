@@ -1,0 +1,56 @@
+body {
+	text-align: center;
+	background-color: lightgray;
+	padding: 5%;
+}
+
+.body-head-container {
+	height: 35%;
+	background-color: lightblue;
+}
+
+.body-head-container-quickContact {
+	display: flex;
+	flex-direction: row;
+}
+
+.body-head-container-quickContact div:first-child {
+	border-right: 1px solid gray;
+}
+
+.quick-contact {
+	padding: 2%;
+	display: flex;
+	flex-direction: row;
+}
+
+/* Main Section */
+
+main {
+	background-color: white;
+	padding-top: 2%;
+}
+
+#download-contact {
+	background-color: orange;
+	width: 80%;
+	margin: 1% auto;
+	padding: 5% 0;
+	border-radius: 10px;
+}
+
+#download-contact a {
+	color: white;
+	text-decoration: none;
+}
+
+
+/* Contact Lis */
+
+.contact-list {
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid gray;
+	padding: 1% 3%;
+	align-items: center;
+}
