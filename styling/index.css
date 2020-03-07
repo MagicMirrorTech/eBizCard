@@ -7,6 +7,8 @@ body {
 	background-color: lightgray;
 }
 
+/* Header Section */
+
 .body-head-container {
 	background-color: lightblue;
 }
@@ -31,7 +33,6 @@ body {
 main {
 	background-color: white;
 	padding-top: 2%;
-	font-size: 4em;
 }
 
 #download-contact {
@@ -58,7 +59,9 @@ main {
 	align-items: center;
 }
 
-
+	.contact-quote p {
+		margin: auto;
+	}
 
 
 
@@ -66,8 +69,8 @@ main {
 @media only screen
   and (min-device-width: 355px) {
 
-		* {
-			/* font-size: 3em; */
+		.body-container > * {
+			font-size: 2rem;
 		}
 
 }
