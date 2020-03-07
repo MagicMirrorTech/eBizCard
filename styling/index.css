@@ -1,22 +1,51 @@
+
+
 * {
 	box-sizing: content-box;
 }
 
-body {
-	text-align: center;
-	background-color: lightgray;
-}
-
-/* Header Section */
+/*
+===
+Header Section
+===
+*/
 
 .body-head-container {
-	background-color: lightblue;
+	background: url("../assets/lionHearted-noBkg.png") no-repeat;
+	background-size: 100%;
+	text-align: center;
 }
+
+
+/* Header IMG */
+
+#bannerImg {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	opacity: .4;
+
+}
+
+/* Profile IMG */
+.body-head-container-img {
+	position: relative;
+	width: 50%;
+	margin: auto;
+	padding: 200px auto;
+}
+
+
+.body-head-container-info {
+	position: relative;
+}
+
 
 .body-head-container-quickContact {
 	display: flex;
 	flex-direction: row;
 }
+
 
 .body-head-container-quickContact div:first-child {
 	border-right: 1px solid gray;
@@ -26,26 +55,52 @@ body {
 	padding: 2%;
 	display: flex;
 	flex-direction: row;
-}
+	align-items: center;
 
-/* Main Section */
+}
+	.quick-contact img {
+		width: 20%;
+	}
+
+	.quick-contact-action {
+		background-color: white;
+		color: black;
+		text-decoration: none;
+		border-radius: 10px;
+		padding: 3%;
+		margin-left: 2%;
+	}
+
+
+
+/*
+===
+Main Section
+===
+*/
 
 main {
 	background-color: white;
 	padding-top: 2%;
+	text-align: center;
 }
 
 #download-contact {
 	background-color: orange;
-	width: 80%;
-	margin: 1% auto;
-	padding: 5% 0;
+	display: block;
+	margin: 3% auto;
+	padding:5% 0;
 	border-radius: 10px;
-}
-
-#download-contact a {
 	color: white;
 	text-decoration: none;
+}
+
+#download-contact > * {
+	margin: auto;
+}
+
+#download-contact div {
+	font-size: 2.5rem;
 }
 
 
@@ -60,17 +115,53 @@ main {
 }
 
 	.contact-quote p {
-		margin: auto;
+		margin: 5% auto;
+		font-size: 125%;
+	}
+
+.list-img {
+	width: 15%;
+}
+
+.contact-social {
+	display: flex;
+	justify-content: space-around;
+	margin: 2% ;
+}
+	.list-sub-img {
+		width: 15%;
+	}
+
+	.contact-list-item a {
+		font-size: 2rem;
+		color: black;
+		background-color: lightgray;
+		border-radius: 15px;
+		padding: 3%;
+		width: 100%;
 	}
 
 
+	.body-footer-container {
+		font-size: 1.7rem;
+		font-style: oblique;
+	}
+
+	.body-footer-container a {
+		margin: auto;
+
+	}
 
 /* Iphone: Portrait and Landscape */
 @media only screen
   and (min-device-width: 355px) {
 
-		.body-container > * {
+		.body-head-container > * {
 			font-size: 2rem;
+		}
+
+		main > * {
+			font-size: 1.8rem;
 		}
 
 }

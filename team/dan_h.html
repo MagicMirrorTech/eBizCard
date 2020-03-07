@@ -4,6 +4,9 @@
 		<meta charset="utf-8">
 		<title>Best Deal In Denver</title>
 
+		<!-- Font -->
+		<link rel="stylesheet" href="/css/master.css">
+
 		<!-- Styling -->
 		<link rel="stylesheet" href="../styling/materialize.scss">
 		<link rel="stylesheet" href="../styling/components/_normalize.scss">
@@ -14,10 +17,9 @@
 		<div class="body-container">
 			<div class="body-head-container">
 				<div class="body-head-container-img">
-					<img src="" alt="Banner Img">
 				</div>
 				<div class="body-head-container-img">
-					<img src="" alt="profile img">
+					<img id="profileImg" src="../assets/icons/happy.png" alt="profile img">
 				</div>
 				<div class="body-head-container-info">
 					<h2>Dan Hoffman</h2>
@@ -25,11 +27,11 @@
 				</div>
 				<div class="body-head-container-quickContact">
 					<div class="quick-contact">
-						<img src="" alt="Thumb Up">
+						<img src="../assets/icons/contact_icons/png/003-like.png" alt="Thumb Up">
 						<a class="quick-contact-action" href="">Like Us on Facebook</a>
 					</div>
 					<div class="quick-contact">
-						<img src="" alt="Website">
+						<img src="../assets/icons/contact_icons/png/015-worldwide-1.png" alt="Website">
 						<a class="quick-contact-action" href="">Check out Our Website</a>
 					</div>
 				</div>
@@ -37,34 +39,35 @@
 
 			<!-- Contact Section -->
 			<main>
-				<div id="download-contact">
-					<a href="#">Add To Contacts</a>
-				</div>
+				<a href="#" id="download-contact">
+					<img class="list-img" src="../assets/icons/contact_icons/png/008-id-card.png" alt="contact card">
+					<div >Add To Contacts</div>
+				</a>
 			<!-- contact info -->
 				<div class="contact-info-container">
 					<!-- Quote -->
 					<div class="contact-list contact-quote">
-						<p>"Per Aspera Ad Astra"</p>
+						<p>"Providing the GREATEST value and the BEST service"</p>
 					</div>
 
 					<!-- phone -->
 					<div class="contact-list contact-number-container">
-						<img src="" alt="phone Icon">
+						<img class="list-img" src="../assets/icons/contact_icons/png/011-smartphone-1.png" alt="phone Icon">
 						<div class="contact-list-item contact-number">
 							<div class="contact-list-item contact-number">
 								<a>{{Number}}</a>
-								<h5>Message</h5>
+								<h5>Message Me</h5>
 							</div>
 							<div class="contact-list-item contact-number">
 								<a>{{Number}}</a>
-								<h5>CALL</h5>
+								<h5>Call Me</h5>
 							</div>
 						</div>
 					</div>
 
 					<!-- email -->
 					<div class="contact-list contact-email">
-						<img src="" alt="Email Icon">
+						<img class="list-img" src="../assets/icons/contact_icons/png/013-mail.png" alt="Email Icon">
 						<div class="contact-list-item contact-email">
 							<div class="contact-list-item contact-email">
 								<h3>{{Email}}</h3>
@@ -75,21 +78,17 @@
 
 					<!-- social -->
 					<div class="contact-list contact-social">
-						<img src="" alt="phone Icon">
+						<!-- <img class="list-img" src="./assets/icons/socialMedia_Logos/png/036-facebook.png" alt="social icon"> -->
 						<div class="contact-list-item contact-social">
-							<div class="contact-list-item contact-social">
-								<img src="" alt="Facebook Icon">
-							</div>
-							<div class="contact-list-item contact-social">
-								<h3>{{Number}}</h3>
-								<h5>CALL</h5>
-							</div>
+							<img class="list-sub-img"  src="../assets/icons/socialMedia_Logos/png/036-facebook.png" alt="phone Icon" alt="Facebook Icon">
+							<img class="list-sub-img" src="../assets/icons/socialMedia_Logos/png/029-instagram.png" alt="Instagram icon">
+							<img class="list-sub-img" src="../assets/icons/report.png" alt="Blog Icon">
 						</div>
 					</div>
 
 					<!-- website -->
 					<div class="contact-list contact-social">
-						<img src="" alt="phone Icon">
+						<img class="list-img" src="../assets/icons/contact_icons/png/015-worldwide-1.png" alt="phone Icon">
 						<div class="contact-list-item contact-website">
 							<div class="contact-list-item contact-website">
 								<a href="https://www.bestdealdenver.com">Best Deal In Town</a>
@@ -104,7 +103,7 @@
 				<img src="" alt="Share Icon">
 			</aside> -->
 			<div class="contact-list body-footer-container">
-
+				Built by <a href="https://magicmirror.dev">Magic Mirror Developers</a>
 			</div>
 		</div>
 	</body>
