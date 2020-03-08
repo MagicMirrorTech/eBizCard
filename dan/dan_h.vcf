@@ -1,14 +1,19 @@
+
 BEGIN:VCARD
-VERSION:3.0
-PRODID:-//Apple Inc.//Mac OS X 10.13.6//EN
+VERSION:4.0
 N:Hoffman;Dan;;;
 FN:Dan Hoffman
 ORG:Best Deal In Town;
-EMAIL;type=INTERNET;type=WORK;type=pref:danielbestdeal@gmail.com
-TEL;type=IPHONE;type=CELL;type=VOICE;type=pref:(720)236-8795
+TITLE:Manager
+TEL;TYPE=work,voice;VALUE=uri:tel:+1-720-236-8795
+TEL;TYPE=home,voice;VALUE=uri:tel:+1-404-555-1212
+ADR;TYPE=WORK;PREF=1;LABEL="Best Deal In Town":;;4371 S. Broadway;Englewood;CO;80113;USA;
 X-SOCIALPROFILE;type=facebook:http://facebook.com/DenverHDTV
 X-SOCIALPROFILE;type=google:https://g.page/bestDealDenver
-item1.URL;type=pref:https://bestdealdenver.com
-item1.X-ABLabel:_$!<HomePage>!$_
+URL:http://www.bestdealdenver.com
+ADR;LABEL;TYPE=WORK:4371 S. Broadway\nEnglewood, CO 80113\nUSA
+EMAIL;type=work;PREF=1;danielbestdeal@gmail.com
+REV:20200308
+x-qq:21588891
 
 END:VCARD
