@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.13.6//EN
+N:Hoffman;Dan;;;
+FN:Dan Hoffman
+ORG:Best Deal In Town;
+EMAIL;type=INTERNET;type=WORK;type=pref:danielbestdeal@gmail.com
+TEL;type=IPHONE;type=CELL;type=VOICE;type=pref:(720)236-8795
+X-SOCIALPROFILE;type=facebook:http://facebook.com/DenverHDTV
+X-SOCIALPROFILE;type=google:https://g.page/bestDealDenver
+item1.URL;type=pref:https://bestdealdenver.com
+item1.X-ABLabel:_$!<HomePage>!$_
+
+END:VCARD

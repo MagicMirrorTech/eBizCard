@@ -25,7 +25,9 @@
 					<img id="profileImg" src="../assets/icons/happy.png" alt="profile img">
 				</div>
 				<div class="body-head-container-info">
-					<h2>Dan Hoffman,</h2>
+					<h2>Dan Hoffman</h2>
+					&nbsp;
+					&nbsp;
 					<h4><em>MANAGER</em></h4>
 				</div>
 				<div class="body-head-container-quickContact">
@@ -42,7 +44,7 @@
 
 			<!-- Contact Section -->
 			<main>
-				<a href="#" id="download-contact">
+				<a id="download-contact" oncick="goToV()">
 					<img class="list-img" src="../assets/icons/contact_icons/png/008-id-card.png" alt="contact card">
 					<div>ADD TO CONTACTS</div>
 				</a>
@@ -80,12 +82,24 @@
 					</div>
 
 					<!-- website -->
-					<div id="webDiv" class="contact-list contact-social" onclick="goTo()">
+					<div id="webDiv" class="contact-list  contact-website-container" onclick="goToW()">
 						<img class="list-img" src="../assets/icons/contact_icons/png/015-worldwide-1.png" alt="phone Icon">
-						<div class="contact-list-item  ">
+						<div class="contact-list-item  contact-website-item">
 							<div class="contact-website">
 								<a href="">Our Website</a>
 								<h5>Check out our website</h5>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- Address -->
+					<div id="addressDiv" class="contact-list  contact-address-container" onclick="goToA()">
+						<img class="list-img" src="../assets/icons/contact_icons/png/018-map.png" alt="phone Icon">
+						<div class="contact-list-item  contact-website-item">
+							<div class="contact-website">
+								<a href="">Our Location</a>
+								<h5>Swing By and Say Hey!</h5>
 							</div>
 						</div>
 					</div>
@@ -99,6 +113,7 @@
 							<a href=""><img class="list-sub-img" src="../assets/icons/report.png" alt="Blog Icon"></a>
 						</div>
 					</div>
+
 				</div>
 
 			</main>
@@ -111,7 +126,11 @@
 		</div>
 		<script type="text/javascript">
 
-			function goTo(){
+			function goToV(){
+				window.location.href = '../dan_h.vcf';
+			}
+
+			function goToW(){
 				 window.open("https://www.bestdealdenver.com");
 			}
 
@@ -126,6 +145,10 @@
 				var url = email+'?'+subj+'&'+body;
 
 				window.open("mailto:"+url);
+			}
+
+			function goToA(){
+				window.open('https://goo.gl/maps/Mn7i59tMc1LN1BvR9');
 			}
 
 		</script>

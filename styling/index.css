@@ -25,12 +25,17 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 2%;
+	padding: 4% 0;
 }
 
 .body-head-container-info h2,
 .body-head-container-info h4 {
-	margin: auto;
+	margin: auto 0;
+}
+
+.body-head-container-info h2 {
+	padding-right: 2%;
+	border-right: 3px solid gray;
 }
 
 
@@ -100,7 +105,7 @@ main {
 }
 
 #download-contact {
-	background-color: rgba(243,90,40,.5);
+	background-color: rgba(75,75,75,1);
 	display: block;
 	margin: 1% auto;
 	padding: 2% 0;
@@ -118,7 +123,7 @@ main {
 }
 
 
-/* Contact Lis */
+/* Contact List */
 
 .contact-list {
 	display: flex;
@@ -181,10 +186,14 @@ main {
 			font-size: 3rem;
 			margin: 0 10%;
 		}
-
-.contact-website {
-	width: auto;
+.contact-website-item {
+	margin-left: 10% !important;
+	]
 }
+			.contact-website {
+				margin-top: 50px;
+				width: auto;
+			}
 
 
 .body-footer-container {
