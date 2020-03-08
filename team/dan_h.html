@@ -5,26 +5,28 @@
 		<title>Best Deal In Denver</title>
 
 		<!-- Font -->
-		<link rel="stylesheet" href="/css/master.css">
+		<!-- <link rel="stylesheet" href="/css/master.css"> -->
 
 		<!-- Styling -->
 		<link rel="stylesheet" href="../styling/materialize.scss">
 		<link rel="stylesheet" href="../styling/components/_normalize.scss">
 		<link rel="stylesheet" href="../styling/index.css" >
 
+		<!-- User Script -->
+		<!-- <script src="../assets/js/index.js" charset="utf-8"></script>	 -->
+
 	</head>
 	<body>
 		<div class="body-container">
 			<div class="body-head-container">
-
-				<div class="body-head-container-info">
-					<h2>Dan Hoffman</h2>
-					<h4><em>MANAGER</em></h4>
-				</div>
 				<div id="spacer" class="body-head-container-img">
 				</div>
 				<div class="body-head-container-img">
 					<img id="profileImg" src="../assets/icons/happy.png" alt="profile img">
+				</div>
+				<div class="body-head-container-info">
+					<h2>Dan Hoffman,</h2>
+					<h4><em>MANAGER</em></h4>
 				</div>
 				<div class="body-head-container-quickContact">
 					<div class="quick-contact">
@@ -42,7 +44,7 @@
 			<main>
 				<a href="#" id="download-contact">
 					<img class="list-img" src="../assets/icons/contact_icons/png/008-id-card.png" alt="contact card">
-					<div >Add To Contacts</div>
+					<div>ADD TO CONTACTS</div>
 				</a>
 			<!-- contact info -->
 				<div class="contact-info-container">
@@ -54,25 +56,36 @@
 					<!-- phone -->
 					<div class="contact-list contact-number-container">
 						<img class="list-img" src="../assets/icons/contact_icons/png/011-smartphone-1.png" alt="phone Icon">
-						<div class="contact-list-item contact-number">
+						<div class=" ">
 							<div class="contact-list-item contact-number">
-								<a href="tel:7202368795">(720)236-8795</a>
-								<h5>Message Me</h5>
+								<a href="tel:7202368795"> (720) 236-8795</a>
+								<span>Message Me</span>
 							</div>
 							<div class="contact-list-item contact-number">
-								<a href="tel:3035930581"="tel">(303)593-0581</a>
-								<h5>Call Me</h5>
+								<a href="tel:3035930581"="tel"> (303) 593-0581</a>
+								<span>Call Me</span>
 							</div>
 						</div>
 					</div>
 
 					<!-- email -->
-					<div class="contact-list contact-email">
+					<div id="emailDiv" class="contact-list contact-email" onclick="goToE()">
 						<img class="list-img" src="../assets/icons/contact_icons/png/013-mail.png" alt="Email Icon">
-						<div class="contact-list-item contact-email">
-							<div class="contact-list-item contact-email">
+						<div class=" contact-email">
+							<div class="contact-list-item ">
 								<a href="mailto:danielbestdeal@gmail.com">danielbestdeal@gmail.com</a>
 								<h5>Drop Us A Line</h5>
+							</div>
+						</div>
+					</div>
+
+					<!-- website -->
+					<div id="webDiv" class="contact-list contact-social" onclick="goTo()">
+						<img class="list-img" src="../assets/icons/contact_icons/png/015-worldwide-1.png" alt="phone Icon">
+						<div class="contact-list-item  ">
+							<div class="contact-website">
+								<a href="">Our Website</a>
+								<h5>Check out our website</h5>
 							</div>
 						</div>
 					</div>
@@ -81,20 +94,9 @@
 					<div class="contact-list contact-social">
 						<!-- <img class="list-img" src="./assets/icons/socialMedia_Logos/png/036-facebook.png" alt="social icon"> -->
 						<div class="contact-list-item contact-social">
-							<img class="list-sub-img"  src="../assets/icons/socialMedia_Logos/png/036-facebook.png" alt="phone Icon" alt="Facebook Icon">
-							<img class="list-sub-img" src="../assets/icons/socialMedia_Logos/png/029-instagram.png" alt="Instagram icon">
-							<img class="list-sub-img" src="../assets/icons/report.png" alt="Blog Icon">
-						</div>
-					</div>
-
-					<!-- website -->
-					<div class="contact-list contact-social">
-						<img class="list-img" src="../assets/icons/contact_icons/png/015-worldwide-1.png" alt="phone Icon">
-						<div class="contact-list-item contact-website">
-							<div class="contact-list-item contact-website">
-								<a href="https://www.bestdealdenver.com">Our Website</a>
-								<h5>Check out our website</h5>
-							</div>
+							<a href="http://pic.sopili.net/l/facebook/page/539871442740653"><img class="list-sub-img"  src="../assets/icons/socialMedia_Logos/png/036-facebook.png" alt="phone Icon" alt="Facebook Icon"></a>
+							<a href="https://www.instagram.com/bestdealdenver/"><img class="list-sub-img" src="../assets/icons/socialMedia_Logos/png/029-instagram.png" alt="Instagram icon"></a>
+							<a href=""><img class="list-sub-img" src="../assets/icons/report.png" alt="Blog Icon"></a>
 						</div>
 					</div>
 				</div>
@@ -103,9 +105,29 @@
 			<!-- <aside class="">
 				<img src="" alt="Share Icon">
 			</aside> -->
-			<div class="contact-list body-footer-container">
+			<div class=" body-footer-container">
 				Built by <a href="https://magicmirror.dev">Magic Mirror Developers</a>
 			</div>
 		</div>
+		<script type="text/javascript">
+
+			function goTo(){
+				 window.open("https://www.bestdealdenver.com");
+			}
+
+			function goToE(){
+				//Edit
+				var name = 'Dan';
+				var email = 'danielbestdeal@gmail.com';
+
+				//Do not edit
+				var subj = 'subject=Introduction';
+				var body = 'body=Hi ' + name + ', Look forward to connecting.';
+				var url = email+'?'+subj+'&'+body;
+
+				window.open("mailto:"+url);
+			}
+
+		</script>
 	</body>
 </html>

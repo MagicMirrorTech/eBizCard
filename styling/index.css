@@ -10,27 +10,20 @@ Header Section
 ===
 */
 
-.body-container {
-	background: url("https://bestdealdenver.com/image/data/cosyone_sample/1slide.jpg") no-repeat;
-	background-size: ;
-	text-align: center;
-}
-
 body {
-	background-color: rgba(225,225,225,.9);
+	/* background: url("https://bestdealdenver.com/image/data/cosyone_sample/1slide.jpg") no-repeat; */
+	background-color: rgba(240,240,240,1);
+	/* background-size: cover; */
+	text-align: center;
+	/* background-position: center; */
+	/* background-clip: border-box; */
 }
-
-.contact-info-container {
-	background-color: rgba(120,210,245,.3);
-}
-
 
 .body-head-container-info {
 	position: relative;
-	background-color: rgba(255,255,255,.7);
 	display: flex;
 	flex-direction: row;
-	text-align: center;
+	justify-content: center;
 	align-items: center;
 	padding: 2%;
 }
@@ -65,6 +58,7 @@ body {
 .body-head-container-quickContact {
 	display: flex;
 	flex-direction: row;
+	border-top: 1px solid gray;
 }
 
 
@@ -84,7 +78,7 @@ body {
 	}
 
 	.quick-contact-action {
-		background-color: white;
+		/* background-color: white; */
 		color: black;
 		text-decoration: none;
 		border-radius: 10px;
@@ -101,17 +95,16 @@ Main Section
 */
 
 main {
-	background-color: white;
 	padding-top: 2%;
 	text-align: center;
 }
 
 #download-contact {
-	background-color: orange;
+	background-color: rgba(243,90,40,.5);
 	display: block;
-	margin: 3% auto;
-	padding:5% 0;
-	border-radius: 10px;
+	margin: 1% auto;
+	padding: 2% 0;
+	border-radius: 20px;
 	color: white;
 	text-decoration: none;
 }
@@ -132,38 +125,65 @@ main {
 	flex-direction: row;
 	border-bottom: 1px solid gray;
 	padding: 3%;
+	text-align: left;
 	align-items: center;
 	margin: 2% auto;
+	background-color: white;
 }
 
-	.contact-quote p {
-		margin: 5% auto;
-		font-size: 125%;
-	}
+.contact-list:first-child { /* align quote in the center */
+	text-align: center;
+}
+
+		.contact-quote p {
+			margin: 5% auto;
+			font-size: 125%;
+		}
+
 
 .list-img {
 	width: 15%;
 }
 
+.contact-list-item {
+	margin-left: 25%;
+	font-size: 2.3rem;
+	width: 350px;
+}
+		.contact-list-item a {
+			color: black;
+			text-decoration: none;
+			font-size: 3rem;
+		}
+.contact-number {
+	margin: 10% 25%;
+}
+
+		.contact-number a {
+			background-color: rgba(10,150,230,.4);
+			padding: 2% 6%;
+			border-radius: 15px;
+		}
+		.contact-number span {
+			margin-bottom: 15px !important;
+
+		}
+
 .contact-social {
 	display: flex;
-	justify-content: space-around;
-	margin: 2% ;
-}
-	.list-sub-img {
-		width: 15%;
-		height: 15%;
-	}
-
-.contact-list-item a {
-	font-size: 2rem;
-	color: black;
-	background-color: lightgray;
-	border-radius: 15px;
-	padding: 3%;
+	justify-content: space-between;
+	margin: 2% auto;
 	width: auto;
-	font-size: 3rem;
-	margin: 2% 3%
+}
+		.contact-social a {
+			font-size: 2rem;
+			color: black;
+			font-size: 3rem;
+			margin: 0 10%;
+		}
+
+.contact-website {
+	width: auto;
 }
 
 
@@ -188,4 +208,10 @@ main {
 			font-size: 1.8rem;
 		}
 
+
+				.list-sub-img {
+					width: 100%;
+					/* margin: auto 5%; */
+					/* height: 70%; */
+				}
 }
