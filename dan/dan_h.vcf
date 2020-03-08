@@ -1,19 +1,19 @@
 
 BEGIN:VCARD
-VERSION:4.0
+VERSION:3.0
 N:Hoffman;Dan;;;
 FN:Dan Hoffman
 ORG:Best Deal In Town;
 TITLE:Manager
-TEL;TYPE=work,voice;VALUE=uri:tel:+1-720-236-8795
-TEL;TYPE=home,voice;VALUE=uri:tel:+1-404-555-1212
-ADR;TYPE=WORK;PREF=1;LABEL="Best Deal In Town":;;4371 S. Broadway;Englewood;CO;80113;USA;
+TEL;TYPE=mobile,voice;VALUE=tel:720-236-8795
+TEL;TYPE=work,voice;VALUE=tel:303-593-0581
+
 X-SOCIALPROFILE;type=facebook:http://facebook.com/DenverHDTV
 X-SOCIALPROFILE;type=google:https://g.page/bestDealDenver
 URL:http://www.bestdealdenver.com
 ADR;LABEL;TYPE=WORK:4371 S. Broadway\nEnglewood, CO 80113\nUSA
-EMAIL;type=work;PREF=1;danielbestdeal@gmail.com
-REV:20200308
-x-qq:21588891
+EMAIL:danielbestdeal@gmail.com
+REV:20200308T180000z
+TZ:-0700
 
 END:VCARD
