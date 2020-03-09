@@ -21,9 +21,9 @@ function goToV(){
 		var curUrl = window.location.pathname.split('/');
 		var nUrl = curUrl[0];
 
-		url = nUrl + "/vcard.php?"+ num;
+		url = nUrl + "/send_sms.php?"+ num;
 		// var initPage = window.location.pathname;
-		window.location.href = (url);
+		return location.href = (url);
 	}
 	else {
 		window.open('../dan/dan_h.vcf');

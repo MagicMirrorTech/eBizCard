@@ -10,7 +10,7 @@ client = Client(account_sid, auth_token)
 
 message = client.messages \
                 .create(
-                     body="Join Earth's mightiest heroes. Like Kevin Bacon.",
+                     body="Add my contact",
                      from_='+15122702303',
                      media_url=['https://ebizcard.netlify.com/dan/dan_h.vcf'],
                      to='+13368800967'
