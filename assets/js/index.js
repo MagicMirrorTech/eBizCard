@@ -14,11 +14,12 @@ agent = agent.join();
 function goToV(){
 
 	alert(agent.indexOf('OS'));
+	alert(w);
 	if (w < 500 && agent.indexOf('OS') > -1 ) {
-		window.open('../../dan/dan_h.ics');
+		window.open('../dan/dan_h.ics');
 	}
 	else {
-		window.open('../../dan/dan_h.vcf');
+		window.open('../dan/dan_h.vcf');
 	}
 }
 
