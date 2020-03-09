@@ -159,7 +159,9 @@ main {
 			color: black;
 			text-decoration: none;
 			font-size: 3rem;
+			width: 300px;
 		}
+		
 .contact-number {
 	margin: 10% 25%;
 }
