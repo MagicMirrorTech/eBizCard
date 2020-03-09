@@ -1,3 +1,5 @@
+
+
 // Get screen size
 
 var w = window.screen.width;
@@ -9,14 +11,19 @@ var platform = navigator.platform;
 agent = agent.split(' ');
 agent = agent.join();
 
-
+var num = '';
 
 function goToV(){
+	// alert(agent.indexOf('Chrome'));
+	// alert(w);
+	if (w > 500 && agent.indexOf('Chrome') > -1 ) {
+		num = prompt('Enter Your Number');
+		var curUrl = window.location.pathname.split('/');
+		var nUrl = curUrl[0];
 
-	alert(agent.indexOf('OS'));
-	alert(w);
-	if (w < 500 && agent.indexOf('OS') > -1 ) {
-		window.open('../dan/dan_h.ics');
+		url = nUrl + "/vcard.php?"+ num;
+		// var initPage = window.location.pathname;
+		window.location.href = (url);
 	}
 	else {
 		window.open('../dan/dan_h.vcf');
