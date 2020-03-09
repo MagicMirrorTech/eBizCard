@@ -1,6 +1,6 @@
 // Get screen size
 
-var w = window.innerWidth;
+var w = window.screen.width;
 var h = window.innerHeight;
 
 var agent = navigator.userAgent;
