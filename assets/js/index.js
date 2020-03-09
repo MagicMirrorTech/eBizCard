@@ -7,10 +7,8 @@ var agent = navigator.userAgent;
 var platform = navigator.platform;
 
 
-
-
 function goToV(){
-	if (w < 500 && agent.indexof('OS') > -1 ) {
+	if (w < 500 && agent.indexOf('OS') > -1 ) {
 		window.open('../dan/dan_h.ics');
 	}
 	else {
