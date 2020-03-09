@@ -12,8 +12,8 @@ agent = agent.join();
 
 
 function goToV(){
-	window.open('../../dan/dan_h.ics');
-	alert(agent);
+
+	alert(agent.indexOf('OS'));
 	if (w < 500 && agent.indexOf('OS') > -1 ) {
 		window.open('../../dan/dan_h.ics');
 	}
