@@ -10,20 +10,16 @@ var platform = navigator.platform;
 agent = agent.split(' ');
 agent = agent.join();
 
-var num = '';
+// var num = '';
 
 function goToV(){
-	// alert(agent.indexOf('Chrome'));
-	// alert(w);
-	if (w > 500 && agent.indexOf('Chrome') > -1 ) {
+	console.log(agent.indexOf('Chrome'));
+	console.log(w);
 
-		// num = prompt('Enter Your Number');
-		// var curUrl = window.location.pathname.split('/');
-		// var nUrl = curUrl[0];
-		//
-		// url = nUrl + "/send_sms.php?"+ num;
-		// // var initPage = window.location.pathname;
-		// return location.href = ('https://ebizcard.netlify.com/send_sms.php');
+	if (w > 500 && agent.indexOf('Chrome') > -1 ) {
+		// var num = prompt('Please enter your number');
+
+		window.open('../send_sms.js');
 	}
 	else {
 		window.open('../dan/dan_h.vcf');
