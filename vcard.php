@@ -3,8 +3,7 @@ require './vendor/autoload.php';
 use Twilio\Rest\Client;
 
 // Your Account SID and Auth Token from twilio.com/console
-$account_sid = 'ACb6c7f7ac0d0f2746036da52a1b144bcf';
-$auth_token = '1b5c94597b0b7e9938aa01802a8d7a5f';
+
 // In production, these should be environment variables. E.g.:
 // $auth_token = $_ENV["TWILIO_AUTH_TOKEN"]
 

@@ -1,5 +1,4 @@
 
-
 // Get screen size
 
 var w = window.screen.width;
@@ -17,13 +16,14 @@ function goToV(){
 	// alert(agent.indexOf('Chrome'));
 	// alert(w);
 	if (w > 500 && agent.indexOf('Chrome') > -1 ) {
-		num = prompt('Enter Your Number');
-		var curUrl = window.location.pathname.split('/');
-		var nUrl = curUrl[0];
 
-		url = nUrl + "/send_sms.php?"+ num;
-		// var initPage = window.location.pathname;
-		return location.href = (url);
+		// num = prompt('Enter Your Number');
+		// var curUrl = window.location.pathname.split('/');
+		// var nUrl = curUrl[0];
+		//
+		// url = nUrl + "/send_sms.php?"+ num;
+		// // var initPage = window.location.pathname;
+		// return location.href = ('https://ebizcard.netlify.com/send_sms.php');
 	}
 	else {
 		window.open('../dan/dan_h.vcf');
