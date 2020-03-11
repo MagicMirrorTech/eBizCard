@@ -1,65 +1,60 @@
+console.log(page);
 
-// Get screen size
-
-var w = window.screen.width;
+var w = window.screen.width; // Get screen size
 var h = window.innerHeight;
 
-var agent = navigator.userAgent;
-var platform = navigator.platform;
+var agent = navigator.userAgent; // Get Device Info
+var platform = navigator.platform; // Get Device Info
+
+
 
 agent = agent.split(' ');
 agent = agent.join();
 
-// var num = '';
-
-function goToV(){
-
-	window.open('../dan/dan_h.vcf');
-	
+function rev() {			//	Google Review Link
+	window.open(page.reviewLink);
 }
 
-function goToW(){
-	 window.open("https://www.bestdealdenver.com");
+function goToVcard(){ // Contact Card
+	window.open(page.cCard);
 }
 
-function goToE(){
-	//Edit
-	var name = 'Dan';
-	var email = 'danielbestdeal@gmail.com';
+function message() { //	Mobile Phone Num
+	let para = 'tel:'
+	window.open(para + page.phone.mobile);
+}
 
+
+function call() { //	Mobile Phone Num
+	let para = 'tel:'
+	window.open(para + page.phone.biz);
+}
+
+function goToEmail(){ // Personal Info
 	//Do not edit
 	var subj = 'subject=Introduction';
-	var body = 'body=Hi ' + name + ', Look forward to connecting.';
-	var url = email+'?'+subj+'&'+body;
+	var body = 'body=Hi ' + page.name + ', Look forward to connecting.';
+	var erl = page.email+'?'+subj+'&'+body;
 
-	window.open("mailto:"+url);
-}
-
-function goToA(){
-	window.open('https://goo.gl/maps/Mn7i59tMc1LN1BvR9');
+	window.open("mailto:"+erl);
 }
 
 
+function goToWeb(){		// Website
+	 window.open(page.website);
+}
+
+function goToAdr(){		//	Business Address
+	window.open(reviewLink);
+}
 
 
-//
-// 	function goToLink(link, name)	 {
-// 		if (link.includes('@')) {
-// 			var arg = email + '?' + subj + '&' + body;
-// 			var url = 'mailto:' + arg;
-// 		}
-// 		else  if (link.includes('http')){
-// 			var url = link;
-// 		}
-// 		else {die}
-//
-// 		echo(url);
-// 		return window.location.href = url;
-// 	}
-//
-//
-// // Get email and website divs
-// 	var email = document.getElementById('emailDiv');
-// 	var web = document.getElementById('webDiv');
-//
-// 	email.onclick = goToLink('danielbestdeal@gmail.com', 'Dan');
+function fb() {		// Facebook
+	window.open(page.socialLinks.fb);
+}
+function insta() {		// Facebook
+	window.open(page.socialLinks.instagram);
+}
+function blog() {		// Facebook
+	window.open(page.socialLinks.blog);
+}

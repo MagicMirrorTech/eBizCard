@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Best Deal In Denver</title>
+
+		<!-- Font -->
+		<!-- <link rel="stylesheet" href="/css/master.css"> -->
+
+		<!-- Styling -->
+		<link rel="stylesheet" href="../styling/materialize.scss">
+		<link rel="stylesheet" href="../styling/components/_normalize.scss">
+		<link rel="stylesheet" href="../styling/index.css" >
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+		<!-- User Scripts -->
+		<script src="../assets/js/params.js" charset="utf-8"></script>
+		<script src="../assets/js/index.js" charset="utf-8"></script>
+		<!-- <script src="https://theapicompany.com/deviceAPI.js"></script> -->
+
+	</head>
+	<body>
+
+		<div class="body-container">
+			<div class="body-head-container">
+				<div id="spacer" class="body-head-container-img">
+				</div>
+				<div class="body-head-container-img">
+					<img id="profileImg" src="../assets/icons/happy.png" alt="profile img">
+				</div>
+				<div class="body-head-container-info">
+					<h2>Dan Hoffman</h2>
+					&nbsp;
+					&nbsp;
+					<h4><em>MANAGER</em></h4>
+				</div>
+				<div class="body-head-container-quickContact">
+					<div class="quick-contact" onclick="fb()">
+						<img src="../assets/icons/contact_icons/png/003-like.png" alt="Thumb Up">
+						<a class="quick-contact-action link" >Like Us on Facebook</a>
+					</div>
+					<div class="quick-contact" onclick="rev()">
+						<img src="../assets/icons/socialMedia_Logos/png/033-google-plus.png" alt="Google Review">
+						<a class="quick-contact-action link" href="">Review Us On Google</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Contact Section -->
+			<main>
+				<a id="download-contact" class="link" onclick="goToVcard()">
+					<img class="list-img" src="../assets/icons/contact_icons/png/008-id-card.png" alt="contact card">
+					<div>ADD TO CONTACTS</div>
+				</a>
+			<!-- contact info -->
+				<div class="contact-info-container">
+					<!-- Quote -->
+					<div class="contact-list contact-quote">
+						<p class="link">"Providing the GREATEST value and the BEST service"</p>
+					</div>
+
+					<!-- phone -->
+					<div class="contact-list contact-number-container ">
+						<img class="list-img" src="../assets/icons/contact_icons/png/011-smartphone-1.png" alt="phone Icon">
+						<div class=" ">
+							<div class="contact-list-item contact-number">
+								<a onclick="message()" > (720) 236-8795</a>
+								<span>Message Me</span>
+							</div>
+							<div class="contact-list-item contact-number">
+								<a onclick="call()"> (303) 593-0581</a>
+								<span>Call Me</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- email -->
+					<div id="emailDiv" class="contact-list contact-email link" onclick="goToEmail()">
+						<img class="list-img" src="../assets/icons/contact_icons/png/013-mail.png" alt="Email Icon">
+						<div class=" contact-email">
+							<div class="contact-list-item ">
+								<a>danielbestdeal@gmail.com</a>
+								<h5>Drop Me A Line</h5>
+							</div>
+						</div>
+					</div>
+
+					<!-- website -->
+					<div id="webDiv" class="contact-list link contact-website-container" onclick="goToWeb()">
+						<img class="list-img" src="../assets/icons/contact_icons/png/015-worldwide-1.png" alt="phone Icon">
+						<div class="contact-list-item  contact-website-item">
+							<div class="contact-website">
+								<a href="">Our Website</a>
+								<h5>Check out our website</h5>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- Address -->
+					<div id="addressDiv" class="contact-list link contact-address-container" onclick="goToAdr()">
+						<img class="list-img" src="../assets/icons/contact_icons/png/018-map.png" alt="phone Icon">
+						<div class="contact-list-item  contact-website-item">
+							<div class="contact-website">
+								<a href="">Our Location</a>
+								<h5>Swing By and Say Hey!</h5>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- social -->
+					<div class="contact-list contact-social">
+						<!-- <img class="list-img" src="./assets/icons/socialMedia_Logos/png/036-facebook.png" alt="social icon"> -->
+						<div class="contact-list-item contact-social">
+							<a onclick="fb()"><img class="list-sub-img"  src="../assets/icons/socialMedia_Logos/png/036-facebook.png" alt="phone Icon" alt="Facebook Icon"></a>
+							<a onclick="insta()"><img class="list-sub-img" src="../assets/icons/socialMedia_Logos/png/029-instagram.png" alt="Instagram icon"></a>
+							<a onclick="blog()"><img class="list-sub-img" src="../assets/icons/report.png" alt="Blog Icon"></a>
+						</div>
+					</div>
+
+				</div>
+
+			</main>
+			<!-- <aside class="">
+				<img src="" alt="Share Icon">
+			</aside> -->
+			<div class=" body-footer-container">
+				Built by <a href="https://magicmirror.dev">Magic Mirror Developers</a>
+			</div>
+		</div>
+		<script type="text/javascript">
+
+
+		</script>
+	</body>
+</html>
