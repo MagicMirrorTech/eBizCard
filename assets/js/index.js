@@ -13,13 +13,13 @@ agent = agent.join();
 // var num = '';
 
 function goToV(){
-	console.log(agent.indexOf('Chrome'));
+	console.log(agent.indexOf('OS'));
 	console.log(w);
 
-	if (w > 500 && agent.indexOf('Chrome') > -1 ) {
+	if (w < 500 && agent.indexOf('OS') > -1 ) {
 		// var num = prompt('Please enter your number');
-
-		window.open('../send_sms.js');
+		alert('Apple does not support this functionality. Directing to text instead');
+		window.open('tel:7202368795');
 	}
 	else {
 		window.open('../dan/dan_h.vcf');
