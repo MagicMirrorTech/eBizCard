@@ -12,7 +12,7 @@ Header Section SHA256:XW4q/i4aMQKKoVg70uVGPlQQdvqYzhmMOLgSsQrNl4A
 
 body {
 	/* background: url("https://bestdealdenver.com/image/data/cosyone_sample/1slide.jpg") no-repeat; */
-	background-color: rgba(240,240,240,1);
+	background-color: rgba(240,235,230,1);
 	/* background-size: cover; */
 	text-align: center;
 	/* background-position: center; */
@@ -56,6 +56,8 @@ body {
 
 #profileImg {
 	width: 50%;
+	height: 50%;
+	border-radius: 50%;
 }
 
 
