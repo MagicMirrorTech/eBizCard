@@ -1,7 +1,10 @@
 
 
-const accountSid = process.env.TWILIO_ACCOUNT_SID;
-const authToken = process.env.TWILIO_AUTH_TOKEN;
+
+const accountSid = 'ACb6c7f7ac0d0f2746036da52a1b144bcf';
+// process.env.TWILIO_ACCOUNT_SID;
+const authToken = '40bfc2f2b4e75e04911b74ae0edf70c1';
+// process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
 var num = '3368800967';
