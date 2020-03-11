@@ -1,4 +1,7 @@
-console.log(page);
+//test to confirm params.js & index.js are loading properly
+// console.log(page);
+
+
 
 var w = window.screen.width; // Get screen size
 var h = window.innerHeight;
