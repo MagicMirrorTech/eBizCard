@@ -35,14 +35,14 @@ function build() {
 
 	}
 
-	else if (ref.includes('sang')){
+	else if (ref.includes('cam')){
 
 		// Person Deets
-			page.name = 'Sang';
-			page.email = 'bestdealsang@gmail.com';
-			page.cCard = '../ecards/sang.vcf';
+			page.name = 'Cameron';
+			page.email = 'cameronbestdealdenver@gmail.com';
+			page.cCard = '../ecards/cam.vcf';
 			page.phone = {
-				'mobile' : '703-401-1271',
+				'mobile' : '720-272-1279',
 				'biz' : '303-593-0581'
 			};
 			page.img = '';
@@ -67,10 +67,10 @@ function build() {
 
 		// Person Deets
 			page.name = 'jerius';
-			page.email = 'danielbestdeal@gmail.com';
-			page.cCard = '../ecards/dan_h.vcf';
+			page.email = 'jerius2007@gmail.com';
+			page.cCard = '../ecards/jerius.vcf';
 			page.phone = {
-				'mobile' : '720-236-8795',
+				'mobile' : '720-656-1563',
 				'biz' : '303-593-0581'
 			};
 			page.img = '';
@@ -92,14 +92,14 @@ function build() {
 	}
 
 
-	else if (ref.includes('cam')){
+	else if (ref.includes('sang')){
 
 		// Person Deets
-			page.name = 'Dan';
-			page.email = 'danielbestdeal@gmail.com';
-			page.cCard = '../ecards/dan_h.vcf';
+			page.name = 'Sang';
+			page.email = 'bestdealsang@gmail.com';
+			page.cCard = '../ecards/sang.vcf';
 			page.phone = {
-				'mobile' : '720-236-8795',
+				'mobile' : '703-401-1271',
 				'biz' : '303-593-0581'
 			};
 			page.img = '';
