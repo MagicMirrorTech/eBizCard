@@ -3,16 +3,13 @@
 
 
 
-var w = window.screen.width; // Get screen size
-var h = window.innerHeight;
+function qr() {			//	Open QR Code
+	document.getElementById('qrImg').style.display = "block";
+}
 
-var agent = navigator.userAgent; // Get Device Info
-var platform = navigator.platform; // Get Device Info
-
-
-
-agent = agent.split(' ');
-agent = agent.join();
+function closeQr() {	// Open QR Code
+	document.getElementById('qrImg').style.display = "none";
+}
 
 function rev() {			//	Google Review Link
 	window.open(page.reviewLink);
