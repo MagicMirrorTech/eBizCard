@@ -382,33 +382,34 @@ function build() {
 	}
 
 
-	// else if (ref.includes('dan')){
-	//
-	// 	// Person Deets
-	// 		page.name = 'Dan';
-	// 		page.email = 'danielbestdeal@gmail.com';
-	// 		page.cCard = '../dan/dan_h.vcf';
-	// 		page.phone = {
-	// 			'mobile' : '720-236-8795',
-	// 			'biz' : '303-593-0581'
-	// 		};
-	// 		page.img = '';
-	// 	// End Deets
-	//
-	//
-	//
-	// 	// Company Deets
-	// 		page.website = 'https://www.bestdealdenver.com';
-	// 		page.reviewLink = 'https://g.page/bestDealDenver/review?mt';
-	// 		page.socialLinks = {
-	// 			'fb' : 'http://pic.sopili.net/l/facebook/page/539871442740653',
-	// 			'instagram' : 'https://www.instagram.com/bestdealdenver/',
-	// 			'blog' : 'https://blog.magicmirror.dev'
-	// 		}
-	// 		page.adr = 'https://goo.gl/maps/Mn7i59tMc1LN1BvR9';
-	// 	// End Company Deets
-	//
-	// }
+	else if (ref.includes('contact')){
+
+		// Person Deets
+			page.name = 'Best Deal In Town';
+			page.email = 'best.deal.in.denver@gmail.com';
+			page.cCard = '../dan/bdd.vcf';
+			page.phone = {
+				'mobile' : '303-593-0581',
+				'biz' : '303-593-0581'
+			};
+			page.img = '';
+		// End Deets
+
+
+
+		// Company Deets
+			page.website = 'https://www.bestdealdenver.com';
+			page.reviewLink = 'https://g.page/bestDealDenver/review?mt';
+			page.socialLinks = {
+				'fb' : 'http://pic.sopili.net/l/facebook/page/539871442740653',
+				'instagram' : 'https://www.instagram.com/bestdealdenver/',
+				'blog' : 'https://blog.magicmirror.dev'
+			}
+			page.adr = 'https://goo.gl/maps/Mn7i59tMc1LN1BvR9';
+		// End Company Deets
+
+	}
+
 	//
 	//
 	// else if (ref.includes('dan')){

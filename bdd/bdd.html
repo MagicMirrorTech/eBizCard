@@ -18,6 +18,8 @@
 		<!-- User Scripts -->
 		<script src="../assets/js/params.js" charset="utf-8"></script>
 		<script src="../assets/js/index.js" charset="utf-8"></script>
+		<script src="../assets/js/display.js" charset="utf-8"></script>
+
 		<!-- <script src="https://theapicompany.com/deviceAPI.js"></script> -->
 
 	</head>
@@ -28,14 +30,14 @@
 				<div id="spacer" class="body-head-container-img">
 				</div>
 				<div class="body-head-container-img">
-					<img id="profileImg" src="../assets/photos/cam.jpg" alt="profile img" onclick="qr()">
-					<img id="qrImg" src="../assets/qr/bdd/cam-qr.png" alt="QR Code" onclick="closeQr()">
+					<img style="border-radius:1px;width:80%" id="profileImg" src="../assets/photos/bdd-logo.png" alt="profile img" onclick="qr()">
+					<img id="qrImg" src="../assets/qr/bdd/sang-qr.png" alt="QR Code" onclick="closeQr()">
 				</div>
 				<div class="body-head-container-info">
-					<h2>Cameron Montes</h2>
+					<h2 id="cardName">Best Deal In Town</h2>
 					&nbsp;
 					&nbsp;
-					<h4><em>Product Specialist</em></h4>
+					<h4><em id="position">"Consumer Electronics At Responsible Prices"</em></h4>
 				</div>
 				<div class="body-head-container-quickContact">
 					<div class="quick-contact" onclick="fb()">
@@ -51,10 +53,6 @@
 
 			<!-- Contact Section -->
 			<main>
-				<a id="download-contact" class="link" onclick="goToVcard()">
-					<img class="list-img" src="../assets/icons/contact_icons/png/008-id-card.png" alt="contact card">
-					<div>ADD TO CONTACTS</div>
-				</a>
 			<!-- contact info -->
 				<div class="contact-info-container">
 					<!-- Quote -->
@@ -66,13 +64,13 @@
 					<div class="contact-list contact-number-container ">
 						<img class="list-img" src="../assets/icons/contact_icons/png/011-smartphone-1.png" alt="phone Icon">
 						<div class=" ">
-							<div class="contact-list-item contact-number">
-								<a onclick="message()" > (720) 272-1279</a>
+							<!-- <div class="contact-list-item contact-number">
+								<a onclick="message()" > (703) 401-1271</a>
 								<span>Message Me</span>
-							</div>
+							</div> -->
 							<div class="contact-list-item contact-number">
 								<a onclick="call()"> (303) 593-0581</a>
-								<span>Call Me</span>
+								<span>Call Us!</span>
 							</div>
 						</div>
 					</div>
@@ -82,8 +80,8 @@
 						<img class="list-img" src="../assets/icons/contact_icons/png/013-mail.png" alt="Email Icon">
 						<div class=" contact-email">
 							<div class="contact-list-item ">
-								<a>cameronbestdealdenver@gmail.com</a>
-								<h5>Drop Me A Line</h5>
+								<a>best.deal.in.denver@gmail.com</a>
+								<h5>Drop Us A Line</h5>
 							</div>
 						</div>
 					</div>
@@ -118,7 +116,7 @@
 						<div class="contact-list-item contact-social">
 							<a onclick="fb()"><img class="list-sub-img"  src="../assets/icons/socialMedia_Logos/png/036-facebook.png" alt="phone Icon" alt="Facebook Icon"></a>
 							<a onclick="insta()"><img class="list-sub-img" src="../assets/icons/socialMedia_Logos/png/029-instagram.png" alt="Instagram icon"></a>
-							<a onclick="blog()"><img class="list-sub-img" src="../assets/icons/report.png" alt="Blog Icon"></a>
+							<!-- <a onclick="blog()"><img class="list-sub-img" src="../assets/icons/report.png" alt="Blog Icon"></a> -->
 						</div>
 					</div>
 
