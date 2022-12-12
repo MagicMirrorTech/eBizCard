@@ -4,7 +4,7 @@
   "description": "html &amp; sass for mobile business card sharing via NFC",
   "main": "index.html",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "twilio": "^3.40.0"
   },
   "devDependencies": {},
